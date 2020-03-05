@@ -1,0 +1,5 @@
+SELECT Buku.id, Buku.name, Penulis.name FROM Buku
+JOIN Penulis ON Buku.PenulisId = Penulis.id
+JOIN BukuKategori ON BukuKategori.BukuId = Buku.id
+JOIN Kategori ON BukuKategori.KategoriId = Kategori.id
+WHERE Kategori.name = '?'

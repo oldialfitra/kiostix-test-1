@@ -1,0 +1,3 @@
+SELECT Buku.id, Buku.name FROM Buku
+JOIN Penulis ON Buku.PenulisId = Penulis.id
+WHERE Penulis.name = '?'
